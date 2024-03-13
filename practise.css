@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-box {
+  height: 100vh;
+  background-image: url("https://e1.pxfuel.com/desktop-wallpaper/383/787/desktop-wallpaper-cameraman.jpg");
+  background-size: cover;
+}
+
+.btn1 {
+  color: white;
+  position: absolute;
+  line-height: 60px;
+  position: absolute;
+  left: 15px;
+  font-size: 28px;
+}
+
+.sidebar_menu {
+    position: absolute;
+    left: -400px;
+  width: 300px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar_menu .menu {
+  width: 300px;
+  position: absolute;
+  top: 80px;
+}
+
+.sidebar_menu .logo {
+  position: absolute;
+  left: 50px;
+  line-height: 60px;
+  color: white;
+}
+
+.sidebar_menu .btn2 {
+  color: white;
+  font-size: 25px;
+  line-height: 60px;
+  position: absolute;
+  left: 270px;
+
+  
+}
+
+ .btn2 i:hover {
+  cursor: pointer;
+}
+
+.sidebar_menu .logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.sidebar_menu .menu i {
+  padding-right: 6px;
+}
+
+.sidebar_menu .menu i,
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sidebar_menu .menu li {
+  margin-top: 6px;
+  padding: 14px 20px;
+}
+
+.sidebar_menu .menu li:hover {
+  box-shadow: 0px 0px 4px white;
+}
+
+.btn1 i :hover {
+  font-size: 70px;
+}
+
+#check {
+    display: none;
+}
+#check:checked ~ .sidebar_menu {
+
+    left: 0;
+}
+
+
+#check:checked ~ .sidebar_menu .btn2 {
+    opacity: 1;
+}
+
+#check:checked ~ .btn1 i {
+    opacity: 0;
+}
